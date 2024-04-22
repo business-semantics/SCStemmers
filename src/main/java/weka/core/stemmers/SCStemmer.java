@@ -8,7 +8,6 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.regex.Pattern;
 
-import weka.core.RevisionUtils;
 
 /**
  * Osnovna apstraktna klasa za funkcije zajedničke za sve stemere za srpski i hrvatski
@@ -22,7 +21,7 @@ import weka.core.RevisionUtils;
  * https://github.com/vukbatanovic/SCStemmers
  * <br>
  */
-public abstract class SCStemmer implements weka.core.stemmers.Stemmer {
+public abstract class SCStemmer  {
 
 	private static final long serialVersionUID = 9203297959472286928L;
 
@@ -38,10 +37,7 @@ public abstract class SCStemmer implements weka.core.stemmers.Stemmer {
 	public String stem(String word) {
 		return stemWord(word);
 	}
-	
-    public String getRevision() {
-        return RevisionUtils.extract("$Revision: 1.0.0 $");
-    }
+
 	
 	/**
 	 * Olakšava poređenje stemovanih fajlova sa izlazom nekih izvornih implementacija tako što upisuje svaki token u poseban red izlaznog fajla
