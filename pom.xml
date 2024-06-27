@@ -15,12 +15,6 @@
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>org.apache.lucene</groupId>
-      <artifactId>lucene-analyzers-common</artifactId>
-      <version>8.11.2</version>
-    </dependency>
-
     <!-- TEST -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
